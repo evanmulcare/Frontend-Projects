@@ -1,0 +1,708 @@
+@import url("https://use.typekit.net/fqs8wqx.css");
+@import url("https://use.typekit.net/fqs8wqx.css");
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffcb2c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+}
+
+.clock-circle {
+    width: 450px;
+    height: 450px;
+    background-color: #e9deed;
+    border-radius: 50%; /* Round corners for circle */
+    border: 20px solid #9dd996;
+    position: absolute;
+    top: 30%;
+    right: -10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flamingo-small {
+    position: absolute;
+    left: -160px;
+    top: 80px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 30%; /* Round corners for circle */
+    border: 2px solid black;
+    position: absolute;
+    top: 90%;
+    left: -25px;
+    transform: skew(20deg);
+    cursor: pointer;
+}
+
+.logo .ring2 {
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+    border-radius: 30%; /* Round corners for circle */
+    border: 1.5px solid black;
+    position: absolute;
+    top: 5%;
+    left: 5px;
+    transform: skew(-5deg);
+}
+.logo .ring3 {
+    width: 60px;
+    height: 60px;
+    background-color: brown;
+    border-radius: 30%; /* Round corners for circle */
+    border: 0.5px solid black;
+    position: absolute;
+    top: 15%;
+    left: 15px;
+    transform: skew(-5deg);
+}
+.card {
+    width: 1200px;
+    height: 600px;
+    background: #005b7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    z-index: -1;
+}
+
+.set {
+    opacity: 0;
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid #ffcb2c;
+}
+.set-text {
+    position: absolute;
+    color: #005b7f;
+    font-family: brush-atf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    left: 0px;
+    transform: rotate(-10deg);
+
+}
+input {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: gambado-sans-forte, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: brown;
+    
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: gambado-sans-forte, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.backgrond-text {
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffdc2c;
+    z-index: inherit;
+}
+
+.typed {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 30s steps(40, end);
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.digital{
+    font-size: 6rem;
+    padding-right: 10%;
+    font-weight: bold;
+    display: flex;
+    color: brown;
+    font-family: gambado-sans-forte, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.digital:hover {
+    cursor: pointer;
+}
+
+.subtext {
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: 20%;
+    left: 290px;
+    color: #fff;
+    font-family: gambado-sans-forte, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.subtext:hover {
+    -webkit-animation: shake 1s ease-in-out .1s infinite alternate;
+    font-size: 1.5rem;
+}
+
+.subtext:hover .hint{
+    opacity: 1;
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(15deg);
+    }
+    to { 
+        -webkit-transform: rotate(-15deg);
+        -webkit-transform-origin: center center;
+    }
+}
+
+.hint { 
+    opacity: 0;
+    color: #9dd996;
+    font-family: brush-atf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
+.clock {
+    left: 160px;
+    top: 10px;
+    padding: 2rem;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 3rem;
+    color: #ff8eff;
+    font-family: brush-atf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+   
+}
+
+
+.clock .number1 { --rotation: 30deg; }
+.clock .number2  { --rotation: 60deg; }
+.clock .number3 { --rotation: 90deg; }
+.clock .number4 { --rotation: 120deg; }
+.clock .number5 { --rotation: 150deg; }
+.clock .number6 { --rotation: 180deg; }
+.clock .number7 { --rotation: 210deg; }
+.clock .number8 { --rotation: 240deg; }
+.clock .number9 { --rotation: 270deg; }
+.clock .number10 { --rotation: 300deg; }
+.clock .number11 { --rotation: 330deg; }
+.clock .number12 { --rotation: 360deg; }
+
+.clock .hand { 
+    --rotation: 0;
+    position: absolute;
+    bottom: 45%;
+    left: 55%;
+    background-color: #a0ba9d;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+
+
+.clock .hand.second {
+    
+    width: 3px;
+    height: 30%;
+    background-color: red;
+}
+.clock .hand.minute {
+    width: 7px;
+    height: 40%;
+    background-color: #9dd996;
+    border: 0.2px solid #fff;
+}
+.clock .hand.hour {
+    width: 10px;
+    height: 35%;
+    background-color: #a0ba9d;
+    border: 0.2px solid #fff;
+}
+
+
+.cool {
+    opacity: 0;
+}
+
+.flamingo {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+.text-box {
+    position: absolute;
+    border-style:solid;
+    border-color: black;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align:middle;
+    display:table;
+    padding: 5px;
+    background-color: white;
+    z-index: 0;
+    left: 550px;
+    top: 30px
+}
+
+.tt {
+    display:table-cell;
+    vertical-align:middle;
+    color: #005b7f;
+    font-family: brush-atf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    }
+
+.neck4 {
+    height: 100px;
+    width: 100px;
+    top: 170px;
+    left: 310px;
+    position: absolute;
+    border-radius: 100% 0px 0px;
+    border-top: 60px solid rgb(255, 118, 142);
+    border-left: 60px solid rgb(255, 118, 142);
+    transform: scale(0.4) rotate(-180deg);
+  }
+  .neck1 {
+    height: 100px;
+    width: 100px;
+    top: 10px;
+    left: 250px;
+    position: absolute;
+    border-radius: 100% 0px 0px;
+    border-top: 60px solid rgb(255, 118, 142);
+    border-left: 60px solid rgb(255, 118, 142);
+    transform: scale(0.4);
+  }
+  .neck2 {
+    height: 100px;
+    width: 100px;
+    top: 70px;
+    left: 250px;
+    position: absolute;
+    border-radius: 100% 0px 0px;
+    border-top: 60px solid rgb(255, 118, 142);
+    border-left: 60px solid rgb(255, 118, 142);
+    transform: scale(0.4) rotate(-90deg);
+  }
+  .neck3 {
+    height: 100px;
+    width: 100px;
+    top: 110px;
+    left: 310px;
+    position: absolute;
+    border-radius: 100% 0px 0px;
+    border-top: 60px solid rgb(255, 118, 142);
+    border-left: 60px solid rgb(255, 118, 142);
+    transform: scale(0.4) rotate(90deg);
+  }
+  .head {
+    height: 100px;
+    width: 140px;
+    top: 20px;
+    left: 310px;
+    position: absolute;
+    z-index: 0;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 50%;
+    transform: scale(0.6);
+  }
+  .beak1 {
+    height: 80px;
+    width: 80px;
+    top: 30px;
+    left: 370px;
+    position: absolute;
+    z-index: 1;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 25px;
+    transform: scale(0.4) rotate(45deg);
+  }
+  .thigh2 {
+    height: 100px;
+    width: 100px;
+    top: 300px;
+    left: 230px;
+    position: absolute;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 100% 0px 0px 100%;
+    transform: rotate(-90deg) scale(0.4);
+  }
+  .thigh1 {
+    height: 100px;
+    width: 100px;
+    top: 260px;
+    left: 230px;
+    position: absolute;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 100% 0px 0px 100%;
+    transform: rotate(-90deg);
+  }
+  .body1 {
+    height: 100px;
+    width: 200px;
+    top: 230px;
+    left: 170px;
+    position: absolute;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 100% 50% 70% 20%;
+    transform: scale(1.2);
+    z-index: 0;
+  }
+  .beak3 {
+    height: 80px;
+    width: 180px;
+    top: 79px;
+    left: 351px;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(100deg, pink 30%, rgb(2, 2, 1) 100%) repeat scroll 0% 0%;
+    border-radius: 0px 100%;
+    transform: scale(0.4) rotate(69deg);
+  }
+  .beak2 {
+    height: 80px;
+    width: 150px;
+    top: 40px;
+    left: 345px;
+    position: absolute;
+    z-index: 0;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 50px 50px 0px;
+    transform: scale(0.4) rotate(42deg);
+  }
+  .eye1 {
+    height: 100px;
+    width: 100px;
+    top: 20px;
+    left: 340px;
+    position: absolute;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 50%;
+    transform: scale(0.2);
+  }
+  .eye2 {
+    height: 50px;
+    width: 50px;
+    top: 45px;
+    left: 365px;
+    position: absolute;
+    z-index: 2;
+    background: black none repeat scroll 0% 0%;
+    border-radius: 50%;
+    transform: scale(0.2);
+  }
+  .feathers4 {
+    height: 180px;
+    width: 80px;
+    top: 192px;
+    left: 286px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: rgb(253, 67, 99) 15px 15px 0px 0px;
+    transform: rotate(72deg) scale(0.75);
+  }
+  .feathers1 {
+    height: 180px;
+    width: 80px;
+    top: 186px;
+    left: 249px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: rgb(253, 67, 99) 15px 15px 0px 0px;
+    transform: rotate(-260deg) scale(1.15);
+  }
+  .feathers3 {
+    height: 180px;
+    width: 80px;
+    top: 178px;
+    left: 250px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: rgb(253, 67, 99) 15px 15px 0px 0px;
+    transform: rotate(-260deg) scale(0.525);
+  }
+  .feathers2 {
+    height: 180px;
+    width: 80px;
+    top: 182px;
+    left: 208px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: rgb(253, 67, 99) 15px 15px 0px 0px;
+    transform: rotate(-260deg) scale(0.575);
+  }
+  .headfeather1 {
+    height: 20px;
+    width: 100px;
+    top: 33px;
+    left: 328px;
+    position: absolute;
+    z-index: 1;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 100% 0px;
+    transform: scale(0.525) rotate(18deg);
+  }
+  .headfeather2 {
+    background: rgb(253, 67, 99) none repeat scroll 0% 0%;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    border-radius: 100% 0px;
+    top: 36px;
+    left: 317px;
+    transform: scale(0.375) rotate(9deg);
+  }
+  .tail3 {
+    height: 100px;
+    width: 100px;
+    top: 297px;
+    left: 115px;
+    position: absolute;
+    z-index: 1;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 100% 0px;
+    transform: scale(0.275) rotate(-15deg);
+  }
+  .tail5 {
+    height: 100px;
+    width: 100px;
+    top: 307px;
+    left: 106px;
+    position: absolute;
+    z-index: 0;
+    background: rgb(253, 67, 99) none repeat scroll 0% 0%;
+    border-radius: 100% 0px;
+    transform: scale(0.375) rotate(-18deg);
+  }
+  .tail2 {
+    height: 100px;
+    width: 100px;
+    top: 292px;
+    left: 96px;
+    position: absolute;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 100% 0px;
+    transform: scale(0.525);
+  }
+  .tail4 {
+    height: 100px;
+    width: 100px;
+    top: 278px;
+    left: 95px;
+    position: absolute;
+    background: rgb(253, 67, 99) none repeat scroll 0% 0%;
+    border-radius: 100% 0px;
+    transform: scale(0.525);
+  }
+  .tail1 {
+    height: 100px;
+    width: 100px;
+    top: 267px;
+    left: 96px;
+    position: absolute;
+    z-index: 1;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 100% 0px;
+    transform: scale(0.525) rotate(18deg);
+  }
+  .bodyfeather2 {
+    height: 50px;
+    width: 80px;
+    top: 245px;
+    left: 300px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: rgb(253, 223, 228) 10px 10px 0px 0px;
+    transform: rotate(-33deg) scale(0.85);
+  }
+  .bodyfeather3 {
+    height: 40px;
+    width: 80px;
+    top: 267px;
+    left: 292px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: rgb(253, 223, 228) 5px 5px 0px 0px;
+    transform: rotate(-9deg) scale(0.775);
+  }
+  .bodyfeather1 {
+    height: 80px;
+    width: 80px;
+    top: 215px;
+    left: 312px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: rgb(253, 223, 228) 15px 15px 0px 0px;
+    transform: rotate(-11deg) scale(0.35);
+  }
+  .leftleg2 {
+    height: 140px;
+    width: 10px;
+    top: 500px;
+    left: 275px;
+    position: absolute;
+    z-index: 2;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 5px;
+  }
+  .rightleg2 {
+    height: 140px;
+    width: 10px;
+    top: 374px;
+    left: 249px;
+    position: absolute;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 5px;
+    transform: rotate(77deg);
+  }
+  .rightknee {
+    height: 100px;
+    width: 100px;
+    top: 410px;
+    left: 130px;
+    position: absolute;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 50%;
+    transform: scale(-0.2);
+  }
+  .rightfoot {
+    height: 0px;
+    width: 0px;
+    top: 390px;
+    left: 281.5px;
+    position: absolute;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid pink;
+    border-left: 50px solid transparent;
+    transform: rotate(-45deg) scale(0.4);
+  }
+  .leftleg1 {
+    height: 140px;
+    width: 10px;
+    top: 360px;
+    left: 275px;
+    position: absolute;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 5px;
+  }
+  .rightleg1 {
+    height: 140px;
+    width: 10px;
+    top: 340px;
+    left: 225px;
+    position: absolute;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 5px;
+    transform: rotate(45deg);
+  }
+  .leftknee {
+    height: 100px;
+    width: 100px;
+    top: 450px;
+    left: 230px;
+    position: absolute;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 50%;
+    transform: scale(-0.2);
+  }
+  .leftfoot {
+    height: 0px;
+    width: 0px;
+    top: 596px;
+    left: 239.5px;
+    position: absolute;
+    z-index: 2;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid pink;
+    border-left: 50px solid transparent;
+    transform: rotate(-45deg) scale(0.4);
+  }
+  .shadow {
+    height: 60px;
+    width: 200px;
+    top: 624px;
+    left: 189px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0)
+      radial-gradient(
+        at center center,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0) 90%
+      )
+      repeat scroll 0% 0%;
+    border-radius: 50%;
+  }
+  
