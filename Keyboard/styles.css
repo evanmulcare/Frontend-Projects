@@ -1,32 +1,179 @@
+@import url("https://use.typekit.net/tvi2slk.css");
+
 body {
     background-color: #FFFFFF;
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: Arial;
 }  
 
 .keyboard {
-    width: 780px;
-    height: 262px;
-    margin: 0px auto;
-    border: 3px solid #000000;
+    width: 890px;
+    height:500px;
+    margin: auto;
     border-radius: 10px;
-    background: #000000;
+    background: #a5d996; 
+    border-bottom: 2mm ridge #ace79a;
+    border-top: 1rem solid #a6e991;
+    border-inline: 1rem solid ;
+    border-inline-color: #b6e9a6;
   }
-  
+
+  .container {
+    margin-top: 30px;
+  }
+
+.screen {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 860px;
+  height: 120px;
+  transform: perspective(90px) rotateX(-1deg);
+  border-radius: 1%;
+  color: green;
+  background-color: black;
+  border: 2px solid;
+  border-image: linear-gradient(#000000, #6b6b6b) 30;
+  box-shadow: 1px 1px rgb(128, 128, 128);
+}
+  .shadow-left {
+    color: yellow;
+  }
   .row {
-    margin-top: 2px;
+    margin-top: 3px;
+    margin-left: 25px;
     overflow: hidden;
   }
   
   .key {
+    text-shadow: -1px 0 #6d6d6d, 0 1px #6d6d6d, 1px 0 black, 0 -1px black;
     width: 50px;
     height: 50px;
     float: left;
     cursor: pointer;
-    background-color: whitesmoke;
-    color: #000000;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
     line-height: 48px;
     text-align: center;
-    margin-left: 2px;
-    border-radius: 4px;
+    border-radius: 7px;
+    border: 1px ridge #6d6d6d;
+    box-shadow: inset 1px 0px 0 2px #e3e3e3;
+   
+    border-radius: 3px;
+    transition:
+      transform 0.08s ease,
+      background-color 0.08s ease,
+      box-shadow 0.08s ease;
+      
+      font-family: "input-mono", monospace;
+      font-weight: 500;
+      font-style: normal;
   }
+
+  .accent-one {
+    background-color: rgb(13, 236, 236);
+    box-shadow: inset 1px 0px 0 2px rgb(14, 214, 214);
+    border: 1px ridge rgb(15, 232, 232);
+    color: whitesmoke;
+  }
+  .accent-two {
+    background-color: rgb(35, 194, 194);
+    box-shadow: inset 1px 0px 0 2px rgb(30, 169, 169);
+    border: 1px ridge rgb(34, 191, 191);
+    color: whitesmoke;
+  }
+
+  .key:hover {
+    background-color: #f7f5f5;
+  }
+  .key:active {
+    transform: translateY(1.5px);
+    box-shadow: 
+        inset 0 -0.5px 0 #aaaaaa,
+    inset 0px -1px 1px -1px #fff,
+        0px 0.5px 0.75px 0px #999;
+  }
+
+  .accent-one:hover {
+    background-color: rgb(12, 224, 224);
+  }
+  .accent-two:hover {
+    background-color: rgb(32, 178, 178);
+  }
+
+   .escape {
+    margin-right: 7px;
+  }
+   .f4 {
+    margin-right: 7px;
+  }
+   .f8 {
+    margin-right: 7px;
+  }
+   .f12 {
+    margin-right: 7px;
+  }
+  
+  .back {
+    width: 100px;
+  }
+
+  .tab {
+    width: 75px;
+  }
+  .backslash {
+    width: 75px;
+  }
+  .capsLock {
+    width: 102px;
+  }
+  .enter {
+    width: 102px;
+  }
+  .shift {
+    width: 125px;
+  }
+  .shift-two {
+    width: 75px;
+  }
+
+  .space {
+    width: 350px;;
+  }
+
+  .ctrl-two {
+    margin-right: 60px;
+  }
+
+  .grid {
+    display: inline-block;
+    position: relative;
+    width: 860px;
+    height: 120px;
+    display: flex;
+    font-size: 4rem;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: "unibody-8-new", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .grid:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(38, 38, 38) 2px, transparent 2px);
+    background-size:5%;
+    background-color: rgba(49, 49, 49, 0.56);
+    box-shadow: inset 0px 0px 0 2px rgb(44, 43, 43);
+  }
+  
+  
+
+  
+
+
