@@ -112,7 +112,7 @@ input {
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    color: brown;
+    color: #a52a2a;
     
 }
 
@@ -348,7 +348,7 @@ button {
     left: 250px;
     position: absolute;
     border-radius: 100% 0px 0px;
-    border-top: 60px solid rgb(255, 118, 142);
+    border-top: 60px solid #ff768e;
     border-left: 60px solid rgb(255, 118, 142);
     transform: scale(0.4) rotate(-90deg);
   }

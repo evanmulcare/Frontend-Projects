@@ -1,0 +1,424 @@
+@import url("https://use.typekit.net/fqs8wqx.css");
+@import url("https://use.typekit.net/fqs8wqx.css");
+
+body {
+    background: #ffcb2c; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.sleeve {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+    background-color: #a52a2a;
+    top: 30%;
+    border-block-end: thick double #681c1c;
+    border-bottom-right-radius: 20px 20px;
+    border-start-end-radius: 10px 10px;
+    border-style: inset;
+    border-color: #741c1c;
+}
+.arm {
+    width: 150%;
+    height: 300px;
+    position: absolute;
+    background-color: #f7d08e;
+    background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
+
+    top: 12%;
+    z-index: -1;
+    border-radius: 2rem;
+}
+.shirt {
+    width: 5%;
+    height: 370px;
+    position: absolute;
+    background-color: #ff768e;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    border-color: #ffabba;
+
+    top: -12%;
+    left: 65%;
+    border-bottom-right-radius: 250px 100px;
+    border-start-end-radius: 20px 20px;
+    border-style: inset;
+
+}
+
+.link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffdc2c;
+    background-image: url("https://www.transparenttextures.com/patterns/squared-metal.png");
+    margin-top: 30%;
+    margin-left: 35%;
+    border-style: inset;
+    border-color: #e0be12;
+}
+
+.band {
+    width: 10%;
+    height: 102%;
+    position: absolute;
+    background-color: #005b7f;
+    background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+
+    left: 78%;
+    z-index: -1;
+    border-inline: 3px dashed #0498d2;
+    border-end-start-radius: 25px 10px;
+    border-end-end-radius: 25px 10px;
+    direction: rtl;
+}
+
+
+.hand {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #f7d08e;
+    background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
+    margin-left: 135%;
+}
+.clock-circle {
+    width: 200px;
+    height: 200px;
+    background-color: #e9deed;
+    border-radius: 50%; /* Round corners for circle */
+    border: 20px solid #9dd996;
+    position: absolute;
+    top: 170%;
+    left: -1%;
+    justify-content: center;
+    align-items: center;
+    outline: 1px inset #bde2b9;
+}
+
+.flamingo-small {
+    position: absolute;
+    left: -90px;
+    top: 20px;
+}
+
+
+.backgrond-text {
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffdc2c;
+    z-index: inherit;
+}
+
+.typed {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 30s steps(40, end);
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+.clock {
+    left: 760px;
+    padding: 2rem;
+    width: 140px;
+    height: 140px;
+    position: relative;
+}
+
+.clock .number {
+    left: 8%;
+    top: 178%;
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.8rem;
+    color: #ff8eff;
+    font-family: brush-atf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+   
+}
+
+
+.clock .number1 { --rotation: 30deg; }
+.clock .number2  { --rotation: 60deg; }
+.clock .number3 { --rotation: 90deg; }
+.clock .number4 { --rotation: 120deg; }
+.clock .number5 { --rotation: 150deg; }
+.clock .number6 { --rotation: 180deg; }
+.clock .number7 { --rotation: 210deg; }
+.clock .number8 { --rotation: 240deg; }
+.clock .number9 { --rotation: 270deg; }
+.clock .number10 { --rotation: 300deg; }
+.clock .number11 { --rotation: 330deg; }
+.clock .number12 { --rotation: 360deg; }
+
+.clock .hand { 
+    --rotation: 0;
+    position: absolute;
+    bottom: -122%;
+    left: -80%;
+    background-color: #a0ba9d;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+
+
+.clock .hand.second {
+    
+    width: 3px;
+    height: 30%;
+    background-color: red;
+    border: 1px ridge #fff;
+
+}
+.clock .hand.minute {
+    width: 7px;
+    height: 40%;
+    background-color: #9dd996;
+    border: 1px ridge #fff;
+}
+.clock .hand.hour {
+    width: 10px;
+    height: 35%;
+    background-color: #a0ba9d;
+    border: 1px ridge #fff;
+}
+
+
+.clock::after {
+    content: '';
+    position: absolute;
+    background-color: #c5e9c1;
+    z-index: 11;
+    width: 7%;
+    height: 7%;
+    top: 222%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border-style: inset;
+    border-color: #c4e4c0;
+}
+.neck4 {
+    height: 50px;
+    width: 50px;
+    top: 85px;
+    left: 155px;
+    position: absolute;
+    border-radius: 100% 0px 0px;
+    border-top: 30px solid rgb(255, 118, 142);
+    border-left: 30px solid rgb(255, 118, 142);
+    transform: scale(0.4) rotate(-180deg);
+  }
+  .neck1 {
+    height: 50px;
+    width: 50px;
+    top: 5px;
+    left: 125px;
+    position: absolute;
+    border-radius: 100% 0px 0px;
+    border-top: 30px solid rgb(255, 118, 142);
+    border-left: 30px solid rgb(255, 118, 142);
+    transform: scale(0.4);
+  }
+  .neck2 {
+    height: 50px;
+    width: 50px;
+    top: 35px;
+    left: 125px;
+    position: absolute;
+    border-radius: 100% 0px 0px;
+    border-top: 30px solid #ff768e;
+    border-left: 30px solid rgb(255, 118, 142);
+    transform: scale(0.4) rotate(-90deg);
+  }
+  .neck3 {
+    height: 50px;
+    width: 50px;
+    top: 55px;
+    left: 155px;
+    position: absolute;
+    border-radius: 100% 0px 0px;
+    border-top: 30px solid rgb(255, 118, 142);
+    border-left: 30px solid rgb(255, 118, 142);
+    transform: scale(0.4) rotate(90deg);
+  }
+  .head {
+    height: 50px;
+    width: 70px;
+    top: 10px;
+    left: 155px;
+    position: absolute;
+    z-index: 0;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 50%;
+    transform: scale(0.6);
+  }
+  .beak1 {
+    height: 40px;
+    width: 40px;
+    top: 20px;
+    left: 185px;
+    position: absolute;
+    z-index: 1;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 25px;
+    transform: scale(0.4) rotate(45deg);
+  }
+
+  .beak3 {
+    height: 30px;
+    width: 45px;
+    top: 40px;
+    left: 200px;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(100deg, pink 30%, rgb(2, 2, 1) 100%) repeat scroll 0% 0%;
+    border-radius: 0px 100%;
+    transform: scale(0.4) rotate(69deg);
+  }
+  .beak2 {
+    height: 40px;
+    width: 75px;
+    top: 20px;
+    left: 175px;
+    position: absolute;
+    z-index: 0;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 50px 50px 0px;
+    transform: scale(0.4) rotate(42deg);
+  }
+  .eye1 {
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    left: 170px;
+    position: absolute;
+    background: pink none repeat scroll 0% 0%;
+    border-radius: 50%;
+    transform: scale(0.2);
+  }
+  .eye2 {
+    height: 25px;
+    width: 25px;
+    top: 22px;
+    left: 180px;
+    position: absolute;
+    z-index: 2;
+    background: black none repeat scroll 0% 0%;
+    border-radius: 50%;
+    transform: scale(0.2);
+  }
+
+  .headfeather1 {
+    height: 10px;
+    width: 50px;
+    top: 15px;
+    left: 164px;
+    position: absolute;
+    z-index: 1;
+    background: rgb(255, 118, 142) none repeat scroll 0% 0%;
+    border-radius: 100% 0px;
+    transform: scale(0.525) rotate(18deg);
+  }
+  .headfeather2 {
+    background: rgb(253, 67, 99) none repeat scroll 0% 0%;
+    height: 10px;
+    width: 50px;
+    position: absolute;
+    border-radius: 100% 0px;
+    top: 18px;
+    left: 158px;
+    transform: scale(0.375) rotate(9deg);
+  }
+
+  .backgrond-text {
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffdc2c;
+    z-index: -10;
+    font-family: gambado-sans-forte, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #ffcb2c;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+}
+
+.typed {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 30s steps(40, end);
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+  .logo {
+    width: 20px;
+    height: 20px;
+    background-color: #ffdc2c;
+    border-radius: 30%; /* Round corners for circle */
+    border: 1px solid black;
+    position: absolute;
+    top: 7%;
+    left: 30px;
+    transform: skew(20deg);
+    cursor: pointer;
+}
+
+.logo .ring2 {
+    width: 15px;
+    height: 15px;
+    background-color: #ffdc2c;
+    border-radius: 30%; /* Round corners for circle */
+    border: 1px solid black;
+    position: absolute;
+    top: 4%;
+    left: 1px;
+    transform: skew(-5deg);
+}
+.logo .ring3 {
+    width: 10px;
+    height: 10px;
+    background-color: #ffdc2c;
+    border-radius: 30%; /* Round corners for circle */
+    border: 0.5px solid black;
+    position: absolute;
+    top: 20%;
+    left: 4px;
+    transform: skew(-5deg);
+}

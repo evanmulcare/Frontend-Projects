@@ -1,9 +1,14 @@
 @import url("https://use.typekit.net/tvi2slk.css");
 
 body {
-    background-color: #FFFFFF;
+  
+    background: #dd8f13;
+    background-image: url("https://www.transparenttextures.com/patterns/wood.png");
+
+  
     margin-top: 100px;
-    font-family: Arial;
+    
+
 }  
 
 .keyboard {
@@ -11,11 +16,11 @@ body {
     height:500px;
     margin: auto;
     border-radius: 10px;
-    background: #a5d996; 
-    border-bottom: 2mm ridge #ace79a;
-    border-top: 1rem solid #a6e991;
+    background: #d2c0a0; 
+    border-bottom: 2mm ridge #e1cfae;
+    border-top: 1rem solid #ead6b3;
     border-inline: 1rem solid ;
-    border-inline-color: #b6e9a6;
+    border-inline-color: #dcc9a8;
   }
 
   .container {
@@ -28,14 +33,16 @@ body {
   margin-right: auto;
   width: 860px;
   height: 120px;
-  transform: perspective(90px) rotateX(-1deg);
+  transform: perspective(90px) rotateX(0deg);
   border-radius: 1%;
-  color: green;
+  color: rgb(255, 255, 255);
   background-color: black;
   border: 2px solid;
-  border-image: linear-gradient(#000000, #6b6b6b) 30;
+  /*border-image: linear-gradient(#000000, #6b6b6b) 30; */
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
   box-shadow: 1px 1px rgb(128, 128, 128);
 }
+
   .shadow-left {
     color: yellow;
   }
@@ -51,13 +58,13 @@ body {
     height: 50px;
     float: left;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    color: #ffffff;
+    background-color: #dbc7a9;
+    color: #292929;
     line-height: 48px;
     text-align: center;
     border-radius: 7px;
-    border: 1px ridge #6d6d6d;
-    box-shadow: inset 1px 0px 0 2px #e3e3e3;
+    border: 1px ridge #8e7d60;
+    box-shadow: inset 1px 0px 0 2px #8e7d60;
    
     border-radius: 3px;
     transition:
@@ -71,20 +78,21 @@ body {
   }
 
   .accent-one {
-    background-color: rgb(13, 236, 236);
-    box-shadow: inset 1px 0px 0 2px rgb(14, 214, 214);
-    border: 1px ridge rgb(15, 232, 232);
-    color: whitesmoke;
+    background-color: #baa785;
+    background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
+    box-shadow: inset 1px 0px 0 2px #a89678;
+    border: 1px ridge #a89678;
+  
   }
   .accent-two {
-    background-color: rgb(35, 194, 194);
-    box-shadow: inset 1px 0px 0 2px rgb(30, 169, 169);
-    border: 1px ridge rgb(34, 191, 191);
-    color: whitesmoke;
+    background-color: #a69373;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+    box-shadow: inset 1px 0px 0 2px #695844;
+    border: 1px ridge #695844;
   }
 
   .key:hover {
-    background-color: #f7f5f5;
+    background-color: #8e7d60;
   }
   .key:active {
     transform: translateY(1.5px);
@@ -95,10 +103,10 @@ body {
   }
 
   .accent-one:hover {
-    background-color: rgb(12, 224, 224);
+    background-color: #a89678;
   }
   .accent-two:hover {
-    background-color: rgb(32, 178, 178);
+    background-color: #695844;
   }
 
    .escape {
@@ -171,9 +179,44 @@ body {
     background-color: rgba(49, 49, 49, 0.56);
     box-shadow: inset 0px 0px 0 2px rgb(44, 43, 43);
   }
-  
-  
 
+  .logo-key {
+    display: flex;
+    }
   
+  .logo {
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-color: #d2c0a0;
+    border-radius: 30%; /* Round corners for circle */
+    border: 2px solid black;
+ 
+    top: 82%;
+    left: 420px;
+    transform: skew(20deg);
+    cursor: pointer;
+}
 
-
+.logo .ring2 {
+    width: 20px;
+    height: 20px;
+    background-color: #d2c0a0;
+    border-radius: 30%; /* Round corners for circle */
+    border: 1.5px solid black;
+    position: absolute;
+    top: 5%;
+    left: 1px;
+    transform: skew(-5deg);
+}
+.logo .ring3 {
+    width: 15px;
+    height: 15px;
+    background-color: #d2c0a0;
+    border-radius: 30%; /* Round corners for circle */
+    border: 1px solid black;
+    position: absolute;
+    top: 20%;
+    left: 4px;
+    transform: skew(-5deg);
+}
