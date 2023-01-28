@@ -1,0 +1,70 @@
+@import url("https://use.typekit.net/yjn7gqe.css");
+
+@font-face {
+    font-family: boris;
+    src: url(boris-webfont.woff);
+  }
+body {
+    background: #b54c18; 
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+    min-height: 100vh;
+    margin: 0;
+}
+.newpaper-background
+{
+    margin: auto;
+    margin-top: 3vh;
+    align-items: center;
+    min-height: 97vh;
+    width: 1200px;
+    position: relative;
+    padding: 30% 2em;
+    color: #f6f6f6;
+    background: #ccbdaa;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+    border-right: 2mm ridge rgba(200, 188, 170, 0.6);
+    border-left: solid rgb(227, 215, 197);
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 40px 50px;
+    
+}
+
+.heading {
+    margin-left: 2%;
+    position: absolute;
+    top: 6%;
+    background-color: #b54c18;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+    color: #dacdb9;
+    width: 90%;
+    height: 120px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 0%;
+    font-size: 6rem;
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.top-text {
+    display: flex;
+    margin-left: 2%;
+    position: absolute;
+    top: 2%;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+    color: #dbccbb;
+    width: 90%;
+    height: 40px;
+    font-family: boris;
+    font-size: 0.8rem;
+    text-align: center;
+    column-gap: 370px;
+    box-sizing: border-box;
+    padding-left: 2%;
+ 
+}
+

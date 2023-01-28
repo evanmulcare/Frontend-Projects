@@ -154,6 +154,7 @@ body {
     font-family: brush-atf, sans-serif;
     font-weight: 500;
     font-style: normal;
+    text-shadow: #f6c4f6 2px 5px;
    
 }
 
@@ -188,7 +189,6 @@ body {
 
 
 .clock .hand.second {
-    
     width: 3px;
     height: 30%;
     background-color: red;
@@ -422,3 +422,5 @@ body {
     left: 4px;
     transform: skew(-5deg);
 }
+
+
