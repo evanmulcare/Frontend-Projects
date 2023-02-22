@@ -15,12 +15,13 @@ body {
 }
 
 .line1 {
-    width: 200%;
+    width: 270%;
     height: 100px;
     background: #90a15d;
     position: absolute;
     top: 0;
   }
+  
 
   .circle1 {
     width: 40px;
@@ -31,7 +32,7 @@ body {
     border-radius: 50%;
     border: 2px inset;
     border-color: #453832;
-    margin-top: 1%;
+    margin-top: 10px;
   }
 
 
@@ -87,7 +88,7 @@ body {
     color: #ce492f;
   }
 .trim1 {
-    width: 200%;
+    width: 270%;
     height: 20px;
     background-color: #acaba9;
     background-image: url("https://www.transparenttextures.com/patterns/squared-metal.png");    
@@ -98,7 +99,7 @@ body {
   }
 
   .trim2 {
-    width: 200%;
+    width: 270%;
     height: 20px;
     background-color: #acaba9;
     background-image: url("https://www.transparenttextures.com/patterns/squared-metal.png");
@@ -109,7 +110,7 @@ body {
   }
 
 .line2 {
-    width: 200%;
+    width: 270%;
     height: 80px;
     background: #90a15d;
     position: absolute;
@@ -122,9 +123,121 @@ body {
     background: #fafafa;
     border-radius: 10%;
     position: absolute;
-    top: 15%;
-    left: 18%;
+    top: 20%;
+    left: 250px;
+    border: 20px ridge;
+    border-color: #e1e2e7;
+    
+  }
+
+  .door {
+    width: 600px;
+    height: 85%;
+    background-color: #d7d6d4;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");  
+    border-radius: 5%;
+    position: absolute;
+    left: 1500px;
+    bottom: 0;
     border: 20px ridge;
     border-color: #c6c1bd;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
     
+  }
+
+  .line3 {
+    width: 100%;
+    height: 100px;
+    background: #90a15d;
+    position: absolute;
+    bottom: 1%;
+  }
+
+  .vl {
+    border-left: 10px solid #464445;
+    left: 50%;
+    position: absolute;
+    height: 100%;
+    
+  }
+
+  .vl2 {
+    border-left: 2px solid #05080f;
+     margin-left: -6px;
+    position: absolute;
+    height: 100%;
+  }
+
+  .doorwindow1 {
+    width: 200px;
+    height: 400px;
+    background: #fafafa;
+    border-radius: 20%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border: 15px ridge;
+    border-color: #e1e2e7;
+    
+  }
+
+  .doorwindow2 {
+    width: 200px;
+    height: 400px;
+    background: #fafafa;
+    border-radius: 20%;
+    position: absolute;
+    top: 10%;
+    left: 59%;
+    border: 15px ridge;
+    border-color: #e1e2e7;
+    
+  }
+
+  .poster {
+    position: absolute;
+    left: 2200px;
+    bottom: 50%;
+    background-color: #fcdafe;
+    width: 120px;
+    height: 150px;
+    border: 1mm ridge white;
+  }
+
+  .window2 {
+    width: 400px;
+    height: 500px;
+    background: #fafafa;
+    border-radius: 10%;
+    position: absolute;
+    top: 20%;
+    left: 2400px;
+    border: 20px ridge;
+    border-color: #e1e2e7;
+  }
+  .window3 {
+    width: 400px;
+    height: 500px;
+    background: #fafafa;
+    border-radius: 10%;
+    position: absolute;
+    top: 20%;
+    left: 2900px;
+    border: 20px ridge;
+    border-color: #e1e2e7;
+  }
+
+  .window4 {
+    width: 400px;
+    height: 500px;
+    background: #fafafa;
+    border-radius: 10%;
+    position: absolute;
+    top: 20%;
+    left: 3400px;
+    border: 20px ridge;
+    border-color: #e1e2e7;
   }
