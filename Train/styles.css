@@ -1,0 +1,130 @@
+body {
+  background-color: #d7d6d4;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 0;
+}
+
+.container{
+  justify-content: center;
+  align-items: center;
+}
+
+.line1 {
+    width: 200%;
+    height: 100px;
+    background: #90a15d;
+    position: absolute;
+    top: 0;
+  }
+
+  .circle1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 300px;
+    background-color: #453832;
+    border-radius: 50%;
+    border: 2px inset;
+    border-color: #453832;
+    margin-top: 1%;
+  }
+
+
+  .circle2 {
+    width: 30px;
+    height: 55px;
+    position: absolute;
+    left: 1100px;
+    background-color: #453832;
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+    border-radius: 40%;
+    border: 2px inset;
+    border-color: #453832;
+    margin-top: 5px;
+  }
+
+  .rec {
+    width: 250px;
+    height: 100px;
+    background-color: #acaba9;
+    background-image: url("https://www.transparenttextures.com/patterns/squared-metal.png");     
+    position: absolute;
+    left: 600px;
+    bottom: 0;
+  }
+
+  .screen {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 190px;
+    height: 70px;
+    border-radius: 10%;
+    color: rgb(0, 0, 0);
+    background-color: #453832;
+    border: 2px solid;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+    box-shadow: 1px 1px rgb(128, 128, 128);
+  }
+  
+  .grid {
+    display: inline-block;
+    position: relative;
+    width: 190px;
+    height: 70px;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: "unibody-8-new", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #ce492f;
+  }
+.trim1 {
+    width: 200%;
+    height: 20px;
+    background-color: #acaba9;
+    background-image: url("https://www.transparenttextures.com/patterns/squared-metal.png");    
+    position: absolute;
+    top: 80px;
+    border: 4px inset;
+    border-color: #c6c1bd;
+  }
+
+  .trim2 {
+    width: 200%;
+    height: 20px;
+    background-color: #acaba9;
+    background-image: url("https://www.transparenttextures.com/patterns/squared-metal.png");
+    position: absolute;
+    bottom: 80px;
+    border: 4px inset;
+    border-color: #c6c1bd;
+  }
+
+.line2 {
+    width: 200%;
+    height: 80px;
+    background: #90a15d;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .window {
+    width: 900px;
+    height: 500px;
+    background: #fafafa;
+    border-radius: 10%;
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    border: 20px ridge;
+    border-color: #c6c1bd;
+    
+  }
